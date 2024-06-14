@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Log In to Furjoy</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="./img/furjoylogo.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- create navigation bar ( header) -->
+	
+	
+	<br>
+	<br>
+	<div class="login-as-guest-button">
+    <a href="/home">
+        <span>Login as Guest</span>
+        <i class="fa fa-user"></i> <!-- You can replace "fa-user" with the appropriate icon class for your desired icon -->
+    </a>
+</div>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-6 col-md-offset-3">
+				
+				
+				<form th:action="@{/login}" method="post" class="form-container">
+					
+					<!-- error message -->
+					<div th:if="${param.error}">
+						<div class="alert alert-danger">Invalid username or
+							password.</div>
+					</div>
+				
+					<!-- logout message -->
+					<div th:if="${param.logout}">
+						<div class="alert alert-info">You have been logged out.</div>
+					</div>
+					
+					<div class = "form-group">
+						<img src="img/furjoylogo.png" alt="Image Description">
+						<h3> Log In </h3>
+						<label for ="username"> Username </label> :
+						<input type="text" class = "form-control" id ="username" name = "username"
+						placeholder="Enter Email ID" autofocus="autofocus">
+					</div>
+					
+					<div class="form-group">
+						<label for="password">Password</label>: <input type="password"
+							id="password" name="password" class="form-control"
+							placeholder="Enter Password" />
+							
+					</div>
+					
+					<div class="form-group">
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3">
+								<input type="submit" name="login-submit" id="login-submit"
+									class="form-control btn btn-primary" value="Log In" />
+							</div>
+						</div>
+            <span>New user? <a href="/" th:href="@{/registration}">Register
+                here</a><br/><br/><a href="/adminlogin" th:href="@{/adminlogin}">Login as Admin</a></span>
+          </div>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

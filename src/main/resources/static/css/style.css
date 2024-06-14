@@ -1,0 +1,72 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Don't repeat the image */
+    background-attachment: fixed; /* Fixed background */
+}
+/* Add glossy border and rounded corners to the form */
+.form-container {
+	margin-top: 30px;
+    border: 2px solid rgba(0, 123, 255, 0.5); /* Transparent border with color (adjust the alpha value as needed) */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(45deg, rgba(0, 123, 255, 0.5), #E4F1FF); /* Transparent gradient background (adjust alpha values as needed) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for glossy effect */
+    align-items: center;
+}
+.form-group img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto 10px; /* Center horizontally and add margin below */
+    max-width: 100px; /* Adjust the image's maximum width as needed */
+}
+
+
+/* Style the submit button */
+/* Style for the Login as Guest button */
+.login-as-guest-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login-as-guest-button a {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.login-as-guest-button a span {
+    margin-right: 10px;
+}
+
+/* Icon style (using FontAwesome, but you can replace with your preferred icon library) */
+.login-as-guest-button a i {
+    font-size: 20px;
+}
+
+/* Hover effect - change background color */
+.login-as-guest-button a:hover {
+    background-color: rgb(0, 255, 0); /* Adjust the alpha value for the hover color */
+}
+
+
+.btn-primary {
+    background-color: rgb(0, 64, 128); /* Transparent button background (adjust alpha value as needed) */
+    border-color: rgba(0, 123, 255, 0.5); /* Transparent button border (adjust alpha value as needed) */
+}
+
+h1,a{
+	color: aliceblue;
+}
+
+h3 {
+	
+    text-align: center;
+    margin-top: 20px;
+}
+

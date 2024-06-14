@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Style for the pet details container */
+.about-us {
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #f0f0f0; /* Change the background color */
+}
+
+.pic {
+  height: auto;
+  width: 302px;
+}
+
+.about {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff; /* Change the background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.text {
+  width: 540px;
+}
+
+.text h2 {
+  font-size: 40px; /* Adjust the font size */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text h5 {
+  font-size: 18px; /* Adjust the font size */
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #4070f4;
+}
+
+/* Style the data portion with a different color */
+.data-text {
+  color: #333; /* Change the text color */
+}
+
+.text p {
+  font-size: 16px; /* Adjust the font size */
+  line-height: 1.5; /* Adjust the line height */
+  letter-spacing: 1px;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+.hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.hire:hover {
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+/* Styles for subheadings */
+.subheading {
+    color: #000; /* Change to the desired color for subheadings */
+    font-weight: bold; /* Optionally, make the subheadings bold */
+}
+
+/* Styles for data */
+.data {
+    color: #333333; /* Change to the desired color for data */
+}

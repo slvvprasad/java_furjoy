@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>Furjoy</title>
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+		<link th:href="@{/css/.css}" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="./img/furjoylogo.ico">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" th:href="@{/css/nice-select.css}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" th:href="@{/css/icofont.css}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" th:href="@{/css/slicknav.min.css}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" th:href="@{/css/owl-carousel.css}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" th:href="@{/css/datepicker.css}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" th:href="@{/css/animate.min.css}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" th:href="@{/css/magnific-popup.css}">
+		
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" th:href="@{/css/normalize.css}">
+        <link rel="stylesheet" th:href="@{/style.css}">
+        <link rel="stylesheet" th:href="@{/css/responsive.css}">
+        <link rel="stylesheet" th:href="@{/css/homecards.css}">
+
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+
+                <div class="indicator"> 
+                    <img src="img/furjoylogo.png" width="50px" height="50px">
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Get Pro Button -->
+		<ul class="pro-features">
+			<!-- <a class="get-pro" href="#">Get Pro</a> -->
+			<li class="big-title">Pro Version Available on Themeforest</li>
+			<li class="title">Pro Version Features</li>
+			<li>2+ premade home pages</li>
+			<li>20+ html pages</li>
+			<li>Color Plate With 12+ Colors</li>
+			<li>Sticky Header / Sticky Filters</li>
+			<li>Working Contact Form With Google Map</li>
+			<div class="button">
+				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul>
+	
+		<!-- Header Area -->
+		<header class="header" >
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="inner">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-12">
+								<!-- Start Logo -->
+								<div class="logo">
+									<!-- <a href="index.html"></a> -->
+									<a href="/"><h2><img src="img/furjoylogo.png" alt="#" style="height: 70px; width: 70px;">FURJOY</h2></a>
+								</div>
+								<!-- End Logo -->
+								<!-- Mobile Nav -->
+								<div class="mobile-nav"></div>
+								<!-- End Mobile Nav -->
+								
+							</div>
+							
+							<div class="col-lg-7 col-md-9 col-12">
+								<!-- Main Menu -->
+								<div class="main-menu">
+									<nav class="navigation">
+										<ul class="nav menu">
+											<li class=""><a href="/">Home</a>
+												<!-- <ul class="dropdown">
+													<li><a href="index.html">Home Page 1</a></li>
+												</ul> -->
+											</li>
+											<li><a href="#about">About</a></li>
+											<li><a href="#services">Services<i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="#adoption">Pet Adoption</a></li>
+													<li><a href="#accessories">Pet Accessories</a></li>
+													<li><a href="#roiform">R.O Intimation Form</a></li>
+												</ul>
+											</li>
+											<li><a href="products">Products</a>
+												<!-- <ul class="dropdown">
+													<li><a href="404.html">404 Error</a></li>
+												</ul> -->
+											</li>
+											<!-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="blog-single.html">Blog Details</a></li>
+												</ul>
+											</li> -->
+											<li><a href="#contact">Contact Us</a></li>
+											<!-- <li><a href="contact.html">Contact Us</a></li> -->
+										</ul>
+									</nav>
+								</div>
+								<!--/ End Main Menu -->
+							</div>
+							<div id="navbar" class="col-lg-2 col-12">
+				<ul class="get-quote">
+    <li sec:authorize="isAuthenticated()">
+		<span sec:authentication="principal.username"> User</span>
+        <a class="btn" th:href="@{/logout}">Logout</a>
+    </li>
+    <li sec:authorize="!isAuthenticated()">
+        <a class="btn" th:href="@{/login}">Login</a>
+    </li>
+</ul>
+
+			</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Slider Area -->
+		<section class="slider">
+			<div class="hero-slider">
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/banner.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>Adopt Your New Furry Family Member</h1>
+									<p>Our mission is to connect loving families with the perfect furry companions, creating moments of joy and forging lasting bonds. </p>
+									<div class="button">
+										<a href="adoptpetsdisplay" class="btn">Adopt Now</a>
+										<!-- <a href="#" class="btn primary">Learn More</a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/banner2.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1>Together, We Can End Pet Loneliness-Report, Rescue, Rehome.</h1>
+									<p>We believe that every lost or lonely pet deserves a chance at a better life, and you can be a part of that transformation.</p>
+									<div class="button">
+										<a href="roform" class="btn">Inform Rescue Organisation</a>
+										<a href="roform" class="btn primary">What's Rescue Organisation?</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start End Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/banner3.jpg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1><span>Your Pet Deserves the Best-Find It in Our Accessories!</span></h1>
+									<p><span>we are passionate about providing an exclusive selection of high-quality pet accessories that cater to their needs and your style.</span></p>
+									<div class="button">
+										<a href="products" class="btn">Shop Now</a>
+										<!-- <a href="#" class="btn primary">Conatct Now</a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+		
+
+
+		<!-- Start Why choose -->
+		<section id="about">
+		<section class="why-choose section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Welcome to FURJOY - Where Every Furry Friend Finds Joy</h2>
+							<img src="img/furjoylogo.png" alt="#" style="height: 40px; width: 40px;">
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Left -->
+						<div class="choose-left">
+							<h3>About Us</h3>
+							<p>At FURJOY, our love for animals is at the heart of everything we do. We're not just a pet services provider; we're a passionate community of pet enthusiasts dedicated to making the world a better place for our beloved four-legged, winged, and scaly friends. </p>
+							<p>Our journey began with a simple mission: to create a hub where pet lovers could find everything they need to provide the best care, love, and happiness to their furry companions. Whether you're searching for the perfect pet to add to your family, reporting a lonely animal in need, or seeking high-quality accessories to pamper your pets, we've got you covered. </p>
+						</div>
+						<!-- End Choose Left -->
+					</div>
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Rights -->
+						<div class="choose-right">
+							
+						</div>
+						<!-- End Choose Rights -->
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+		<!--/ End Why choose -->
+
+		<!-- Start Fun-facts -->
+		<div id="fun-facts" class="fun-facts section overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont-dog-alt"></i>
+							<div class="content">
+								<span class="counter">80</span>
+								<p>million</p>
+								<p>Homeless Pets</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont-home"></i>
+							<div class="content">
+								<span class="counter">7448</span>
+								<p>Animal Shelters</p>
+								<p>In India</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont-cat-dog"></i>
+							<div class="content">
+								<span class="counter">32</span>
+								<p>million</p>
+								<p>Living in Homes</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Start Single Fun -->
+						<div class="single-fun">
+							<i class="icofont-holding-hands"></i>
+							<div class="content">
+								<span class="counter">4</span>
+								<p>million</p>
+								<p>pets adopted</p>
+							</div>
+						</div>
+						<!-- End Single Fun -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Fun-facts --> 
+		
+		<!-- Start service -->
+		<section id="services">
+		<section class="services section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Services</h2>
+							<img src="img/furjoylogo.png" alt="#" style="height: 40px; width: 40px;">
+							<p>At FURJOY, we're dedicated to providing a range of services that cater to all your pet needs. Our mission is to make sure your beloved pets live happy, healthy, and fulfilling lives. Explore our services and discover how we can be your trusted partner in pet care.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-paw"></i>
+							<h4><a href="adoptpetsdisplay">Pet Adoption</a></h4>
+							<p>Welcome a new family member into your home by choosing our pet adoption service. We connect loving families with rescue animals in need of a forever home. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-dog"></i>
+							<h4><a href="roform">Rescue A Pet</a></h4>
+							<p>Help us be the voice for those who can't speak for themselves. Our "Rescue Organisation Intimation" service empowers you to report lost or lonely pets to rescue organizations. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-bone"></i>
+							<h4><a href="products">Pet Accessories</a></h4>
+							<p>Treat your pets to a world of stylish and functional accessories that enhance their lives.Shop our collection to provide the best for your furry companions.</p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-heart"></i>
+							<h4><a >Passion for Pets</a></h4>
+							<p> We are pet enthusiasts who understand the unique bond between humans and animals. Our services are driven by a genuine love for pets. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-people"></i>
+							<h4><a>Community of Caring</a></h4>
+							<p>We've built a community of like-minded pet lovers who share in our mission to create a better world for pets. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Start Single Service -->
+						<div class="single-service">
+							<i class="icofont-holding-hands"></i>
+							<h4><a>Trusted Partnerships</a></h4>
+							<p>We collaborate with rescue organizations, shelters, and pet accessory suppliers to ensure quality and reliability in everything we offer. </p>	
+						</div>
+						<!-- End Single Service -->
+					</div>
+				</div>
+			</div>
+		</section>
+		</section>
+		<!--/ End service -->
+
+		<!-- Start portfolio -->
+		<section id="adoption">
+		<section class="portfolio section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Adopt A Pet Now and Find Your Joy</h2>
+							<img src="img/furjoylogo.png" alt="#" style="height: 40px; width: 40px;">
+							<p>Adopt now</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="owl-carousel portfolio-slider">
+							<div class="single-pf">
+								<img src="img/ap1.jpg" alt="#">
+								<a class="btn">Dogs</a>
+								<a href="adoptpetsdisplay?category=dog" class="btn" style="margin-top: 40px;">Adopt Now</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/ap3.jpg" alt="#">
+								<a class="btn">Cats</a>
+								<a href="adoptpetsdisplay?category=cat" class="btn" style="margin-top: 40px;">Adopt Now</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/ap6.jpg" alt="#">
+								<a class="btn">Rabbits</a>
+								<a href="adoptpetsdisplay?category=rabbit" class="btn" style="margin-top: 40px;">Adopt Now</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/fishpets.jpg" alt="#">
+								<a class="btn">Fishs</a>
+								<a href="adoptpetsdisplay?category=fish" class="btn" style="margin-top: 40px;">Adopt Now</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/otherpets.jpg" alt="#">
+								<a class="btn">All Pets</a>
+								<a href="adoptpetsdisplay?category=all" class="btn" style="margin-top: 40px;">Adopt Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		</section>
+		<!--/ End portfolio -->
+
+		<!-- Start Call to action -->
+		<section id="roiform">
+		<section class="call-action overlay" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-12">
+						<div class="content">
+							<h2>Fill the Rescue Organisation Intimation Form and Inform about the homeless pets.</h2>
+							<p>Every report matters, every pet deserves a chance, and every action brings us one step closer to a world where no pet is left behind.</p>
+							<div class="button">
+								<a href="roform" class="btn">Fill R.O Form Now</a>
+								<a href="roform" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		</section>
+		<!--/ End Call to action -->
+		
+		
+		
+		
+		<!-- Start Blog Area -->
+		<section class="blog section" id="accessories">
+			
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Where Pets and Style Collide – Shop with Joy</h2>
+							<img src="img/furjoylogo.png" alt="#" style="height: 40px; width: 40px;">
+							<p>Shop Our Exclusive Premium Pet Products</p>
+						</div>
+					</div>
+				</div>
+				<div class="product-container">
+    <div class="product-card">
+        <img src="img/dogacc.jpg" class="product-img" alt="Product Image">
+        <h3 class="product-title">Dog Accessories</h3>
+        
+        <div class="product-buttons">
+           <button class="buy-button"  onclick="window.location.href='products?category=dog'">Shop Now</button>
+           
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="img/catacc.jpg" class="product-img" alt="Product Image">
+        <h3 class="product-title">Cat Accessories</h3>
+        
+        <div class="product-buttons">
+            <button class="buy-button"  onclick="window.location.href='products?category=cat'">Shop Now</button>
+           
+        </div>
+    </div>
+    <div class="product-card">
+        <img src="img/otheracc.jpg" class="product-img" alt="Product Image">
+        <h3 class="product-title">All Pet Accessories</h3>
+        
+        <div class="product-buttons">
+            <button class="buy-button"  onclick="window.location.href='products?category=all'">Shop Now</button>
+           
+        </div>
+    </div>
+    <!-- Add more product cards here if needed -->
+</div>
+</section>
+		
+		<!-- Start Appointment -->
+		<section id="contact">
+		<section class="appointment">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Contact Us</h2>
+							<img src="img/furjoylogo.png" alt="#" style="height: 40px; width: 40px;">
+							<p>Do Reach Us For Any Query</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 col-12">
+						<form class="form" action="https://formspree.io/f/mdorylpw" method="post">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="name" type="text" placeholder="Name">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="email" type="email" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="phone" type="text" placeholder="Phone">
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-group">
+										<input name="name" type="text" placeholder="Place">
+									</div>
+								</div>
+								
+								<div class="col-lg-12 col-md-12 col-12">
+									<div class="form-group">
+										<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-5 col-md-4 col-12">
+									<div class="form-group">
+										<div class="button">
+											<button type="submit" class="btn">Send</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-7 col-md-8 col-12">
+									<!-- <p>( We will be confirm by an Text Message )</p> -->
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6 col-md-12 ">
+						<div class="appointment-image">
+							<img src="img/contactus.png" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+		
+		
+		<!-- Footer Area -->
+		<footer id="footer" class="footer ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>About Us</h2>
+								<p>FURJOY is your ultimate destination for all things pet-related. Discover the joy of pet adoption, report homeless pets for rescue, and shop premium pet accessories.</p>
+								<!-- Social -->
+								<ul class="social">
+									<li><a href="#"><i class="icofont-facebook"></i></a></li>
+									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+									<li><a href="#"><i class="icofont-twitter"></i></a></li>
+									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+								</ul>
+								<!-- End Social -->
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer f-link">
+								<h2>Quick Links</h2>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="putadoptionform.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Put Your Pet For Adoption</a></li>
+											<li><a href="addproducts.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Pet Accessory Seller</a></li>
+											
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-12">
+										<ul>
+											<li><a href="faqs.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQS</a></li>
+											<li><a href="terms.html" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>Terms & Conditions</a></li>	
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<h2>Give FeedBack</h2>
+								<p>Your input helps us improve our services and create a better experience for our users. </p>
+								<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+									<input name="text" placeholder="FeedBack" class="common-input" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Your FeedBack'" required="" type="text">
+									<button class="button"><i class="icofont icofont-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-footer">
+								<!-- <h2>Open Hours</h2> -->
+								<p style="max-width: 100%;">
+    <img src="img/furjoylogo.png" alt="#" style="max-width: 100%; height: auto;">
+</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-12">
+							<div class="copyright-content">
+								<p>© Copyright 2023 |  All Rights Reserved by <a href="index.html" target="_blank">Furjoy.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+
+		<!--js files-->
+		<!-- jquery Min JS -->
+        <script type="text/javascript" th:src = "@{/js/jquery.min.js}"></script>
+		
+        
+		<!-- jquery Migrate JS -->
+		<script type="text/javascript" th:src = "@{/js/jquery-migrate-3.0.0.js}"></script>
+		
+		<!-- jquery Ui JS -->
+		<script type="text/javascript" th:src = "@{/js/jquery-ui.min.js}"></script>
+		
+		<!-- Easing JS -->
+		<script type="text/javascript" th:src = "@{/js/easing.js}"></script>
+      
+		<!-- Color JS -->
+		<script type="text/javascript" th:src = "@{/js/colors.js}"></script>
+		
+		<!-- Popper JS -->
+		<script type="text/javascript" th:src = "@{/js/popper.min.js}"></script>
+		
+		<!-- Bootstrap Datepicker JS -->
+		<script type="text/javascript" th:src = "@{/js/bootstrap-datepicker.js}"></script>
+		
+		<!-- Jquery Nav JS -->
+		<script type="text/javascript" th:src = "@{/js/jquery.nav.js}"></script>
+       
+		<!-- Slicknav JS -->
+		<script type="text/javascript" th:src = "@{/js/slicknav.min.js}"></script>
+		
+		<!-- ScrollUp JS -->
+		<script type="text/javascript" th:src = "@{/js/jquery.scrollUp.min.js}"></script>
+      
+		<!-- Niceselect JS -->
+		<script type="text/javascript" th:src = "@{/js/niceselect.js}"></script>
+	
+		<!-- Tilt Jquery JS -->
+		<script type="text/javascript" th:src = "@{/js/tilt.jquery.min.js}"></script>
+		
+		<!-- Owl Carousel JS -->
+		<script type="text/javascript" th:src = "@{/js/owl-carousel.js}"></script>
+        
+		<!-- counterup JS -->
+		<script type="text/javascript" th:src = "@{/js/jquery.counterup.min.js}"></script>
+		
+		<!-- Steller JS -->
+		<script type="text/javascript" th:src = "@{/js/steller.js}"></script>
+		
+		<!-- Wow JS -->
+		<script type="text/javascript" th:src = "@{/js/wow.min.js}"></script>
+		
+		<!-- Magnific Popup JS -->
+		<script type="text/javascript" th:src = "@{/js/jquery.magnific-popup.min.js}"></script>
+	
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" th:src = "@{/js/bootstrap.min.js}"></script>
+		
+		<!-- Main JS -->
+		<script type="text/javascript" th:src = "@{/js/main.js}"></script>
+		
+    </body>
+</html>
+	

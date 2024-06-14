@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Put Pet Up for Adoption</title>
+    <style>
+        /* CSS for styling the form */
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Add more CSS styles as needed */
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="display-4">Put a Pet Up for Adoption</h1>
+    <form th:action="@{/putadoption}" th:object="${newPet}" method="post">
+        <div class="form-group">
+            <label for="petName">Pet Name:</label>
+            <input type="text" class="form-control" id="petName" th:field="*{petName}" required>
+        </div>
+        <div class="form-group">
+            <label for="petType">Pet Type:</label>
+            <input type="text" class="form-control" id="petType" th:field="*{petType}" required>
+        </div>
+        <div class="form-group">
+            <label for="breed">Breed:</label>
+            <input type="text" class="form-control" id="breed" th:field="*{breed}" required>
+        </div>
+        <div class="form-group">
+            <label for="ownerName">Owner Name:</label>
+            <input type="text" class="form-control" id="ownerName" th:field="*{ownerName}" required>
+        </div>
+        <div class="form-group">
+            <label for="ownerPhoneNumber">Owner Phone Number:</label>
+            <input type="text" class="form-control" id="ownerPhoneNumber" th:field="*{ownerPhoneNumber}" required>
+        </div>
+        <div class="form-group">
+            <label for="ownerEmail">Owner Email:</label>
+            <input type="email" class="form-control" id="ownerEmail" th:field="*{ownerEmail}" required>
+        </div>
+        <div class="form-group">
+            <label for="ownerLocation">Owner Location:</label>
+            <input type="text" class="form-control" id="ownerLocation" th:field="*{ownerLocation}" required>
+        </div>
+        <div class="form-group">
+            <label for="petHealthStatus">Pet Health Status:</label>
+            <input type="text" class="form-control" id="petHealthStatus" th:field="*{petHealthStatus}" required>
+        </div>
+        <div class="form-group">
+            <label for="petGender">Pet Gender:</label>
+            <input type="text" class="form-control" id="petGender" th:field="*{petGender}" required>
+        </div>
+        <div class="form-group">
+            <label for="petAge">Pet Age:</label>
+            <input type="text" class="form-control" id="petAge" th:field="*{petAge}" required>
+        </div>
+        <div class="form-group">
+            <label for="petDescription">Pet Description:</label>
+            <textarea class="form-control" id="petDescription" th:field="*{petDescription}" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="petImageUrl">Pet Image URL:</label>
+            <input type="url" class="form-control" id="petImageUrl" th:field="*{petImageUrl}">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Create a container for the product cards */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style each product card */
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Style the product image */
+.product-card img {
+    max-width: 100%;
+    height: 300px; /* Set a fixed height for all images */
+    width: 250px; /* Set a fixed width for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px; /* Rounded corners for a square or rectangle shape */
+}
+
+/* Style the product title */
+.product-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Style the product price as a price tag */
+.product-price {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Style the product buttons */
+.product-buttons {
+    margin-top: 20px;
+    display: flex; /* Make the buttons display in a row */
+    justify-content: space-between; /* Create space between the buttons */
+}
+
+.product-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 75px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-buttons button:hover {
+    background-color: #333;
+}
+
+/* Create a spacer to adjust the space between sections */
+.spacer {
+    height: 80px; /* Adjust the height as needed */
+}
